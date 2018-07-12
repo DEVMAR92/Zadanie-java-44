@@ -9,6 +9,11 @@ public class Procesor {
         this.timing = timing;
     }
 
+    public Procesor(String producer, double timing) {
+        this.producer = producer;
+        this.timing = timing;
+    }
+
     String showInfo() {
         String info = "PROCESOR: Producent: " + producer + ", model: " + model + ", taktowanie: " + timing;
         return info;

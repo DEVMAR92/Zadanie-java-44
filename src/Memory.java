@@ -11,6 +11,12 @@ public class Memory {
         this.timing = timing;
     }
 
+    public Memory(String producer, double amount, double timing) {
+        this.producer = producer;
+        this.amount = amount;
+        this.timing = timing;
+    }
+
     String showInfo() {
         String info = "MEMORY: Producent: " + producer + ", model: " + model + ", ilość: " + amount + ", taktowanie: " + timing;
         return info;

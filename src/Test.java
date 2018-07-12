@@ -27,5 +27,13 @@ public class Test {
 
         System.out.println("Zmniejszono procesor do " + overclockCpu2);
 
+        // TWORZYMY 3. KOMPUTER POPRZEZ METODE ASSEMBLY
+
+        ComputerAssembly computerAssembly = new ComputerAssembly();
+
+        Computer computer3 = computerAssembly.assembly("Komputer3","AMD", 4400,
+                "G.SKILL", 2048, 2200);
+        computer3.showInfo();
+
     }
 }
