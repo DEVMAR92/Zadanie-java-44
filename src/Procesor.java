@@ -13,4 +13,5 @@ public class Procesor {
         String info = "PROCESOR: Producent: " + producer + ", model: " + model + ", taktowanie: " + timing;
         return info;
     }
+
 }

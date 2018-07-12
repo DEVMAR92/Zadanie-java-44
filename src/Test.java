@@ -10,9 +10,22 @@ public class Test {
         Memory memory2 = new Memory("Gorsair", "Vengeance", 8196, 2666);
         Computer computer2 = new Computer("SONY", procesor2, memory2);
 
-
+        Overclock overclock = new Overclock();
 
         computer1.showInfo();
         computer2.showInfo();
+
+        // PODKRĘCAMY PROCESOR 1. KOMPUTERA O 200
+
+        double overclockCpu1 = overclock.increaseCpuClock(computer1,200);
+
+        System.out.println("Podkręcono procesor do " + overclockCpu1);
+
+        // ZMNIEJSZAMY PROCESOR 2. KOMPUTERA O 400
+
+        double overclockCpu2 = overclock.decreaseCpuClock(computer2, 400);
+
+        System.out.println("Zmniejszono procesor do " + overclockCpu2);
+
     }
 }
